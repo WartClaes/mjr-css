@@ -2,7 +2,7 @@
 
 All elements in CSS are based on the same box model. This model defines the dimensions of the element.
 
-[box model](../../assets/box-model.png)
+![box model](../../assets/box-model.png)
 
 ## Content
 
