@@ -25,7 +25,7 @@ Selects all elements of the given type.
 ```
 ```css
 p {
-	background-color: #bada55;
+	background-color: #f00;
 }
 ```
 
