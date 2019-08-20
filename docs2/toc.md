@@ -18,6 +18,7 @@
 		- Colors
 		- Lengths
 		- Variables
+		- Functions
 
 	- Typography
 		- Basics
@@ -25,8 +26,9 @@
 
 	- Concepts
 		- Cascade
-		- Inheritance
 		- Specificity
+		- Source order
+		- Inheritance
 
 - Boxes
 	- Box model
