@@ -1,13 +1,13 @@
-# 1.3 Concepts
+# 1.5 Concepts
 
-In CSS there are a large amount of value types. Ranging from numerical values to functions.
-Some are more common then others, but we will take a look at all of them here.
+In this part we will cover some of the core concepts of CSS. These are the fundamentals of CSS.
 
 ## Content
 
 - [Cascade](#cascade)
-- [Inheritance](#inheritance)
 - [Specificity](#specificity)
+- [Source order](#source-order)
+- [Inheritance](#inheritance)
 
 ---
 
@@ -32,36 +32,6 @@ p {
 ```
 
 In the example above the background of the `p` will be `#00f`.
-
----
-
-## Inheritance
-
-Apart from cascading, inheritance is the phenomenon that elements inherit properties without being explicitly defined in the CSS.
-For example if you set the `font-size` of a `div` on `14px`, all the `p` inside this `div` will inherit that `font-size` of `14px`.
-
-Which properties are inherited is down to common sense. For some properties it is illogic to inherit properties such as backgrounds,
-borders, paddings, ... On the other hand it makes sense that if you define a `font-family` on the `<html>` tag, you want it
-applied to everything inside that element.
-
-A complete list of which properties are inherited can be found [in the W3 specification](http://www.w3.org/TR/CSS21/propidx.html).
-
-#### Example
-
-```css
-div {
-    font-size: 14px;
-}
-```
-
-```html
-<div>
-    I have a font-size of 14px.
-    <p>
-        But so have I!
-    </p>
-</div>
-```
 
 ---
 
@@ -115,4 +85,43 @@ div {
 
 ```html
 <p id="bar" class="foo">I am #bada55.</p>
+```
+
+---
+
+## Source order
+
+The source order in CSS also plays an important role in the parsing of the CSS.
+
+If properties with the same importance exist, the last one will always win.
+It explains the: "I will put my new CSS at the bottom of the file to be sure".
+
+---
+
+## Inheritance
+
+Apart from cascading, inheritance is the phenomenon that elements inherit properties without being explicitly defined in the CSS.
+For example if you set the `font-size` of a `div` on `14px`, all the `p` inside this `div` will inherit that `font-size` of `14px`.
+
+Which properties are inherited is down to common sense. For some properties it is illogic to inherit properties such as backgrounds,
+borders, paddings, ... On the other hand it makes sense that if you define a `font-family` on the `<html>` tag, you want it
+applied to everything inside that element.
+
+A complete list of which properties are inherited can be found [in the W3 specification](http://www.w3.org/TR/CSS21/propidx.html).
+
+#### Example
+
+```css
+div {
+    font-size: 14px;
+}
+```
+
+```html
+<div>
+    I have a font-size of 14px.
+    <p>
+        But so have I!
+    </p>
+</div>
 ```
