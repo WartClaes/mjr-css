@@ -31,7 +31,7 @@ p {
 }
 ```
 
-There are 2 special keywords. The first in `transparent` which, as the keyword says, sets the color to transparent.
+There are 2 special keywords. The first is `transparent` which, as the keyword says, sets the color to transparent.
 Technically it is a shorthand for `rgba(0,0,0,0)`.
 
 The second keyword is `currentColor`. It represents the value of the elements `color` property so you can use it
