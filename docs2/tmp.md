@@ -1,10 +1,10 @@
-## Scoped selectors
+# Scoped selectors
 
 There is a Working Draft in CSS that specifies scoped selectors. These selectors are used to target a subtree of a document. The best known example is the usage in a webcomponent.
 
 The draft includes scoped selectors, shadow DOM selectors and fragmented styling. We are only going to include shadow DOM since this is the one that will be used the most even though it is still a W3C draft.
 
-### Shadow DOM
+## Shadow DOM
 
 A shadow tree is a part of a document that is attached to any element in the DOM. The root of this tree is called the **shadow root**. One element can have multiple shadow trees. An element containing a shadow tree is a **shadow host**.
 
@@ -35,3 +35,4 @@ The `/deep/` combinator targets every element reachable from the original elemen
     background-color: darkkhaki;
 }
 ```
+
