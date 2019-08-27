@@ -1,4 +1,4 @@
-# 3.2 Positioning
+# 3.5 Positioning
 
 CSS positioning is one of the most used parts of CSS. Positioning an element is done by the `position` property.
 An element is positioned according their calculated position.

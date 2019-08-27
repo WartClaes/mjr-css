@@ -24,16 +24,55 @@ A media query consist out of a media type and a media feature, different queries
 
 ### Media Features
 
-- **height [min-/max-/device-]**: The height media feature describes the height of the output device's rendering surface (such as the height of the viewport or of the page box on a printer).
-- **width [min-/max-/device-]**: The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).
-- **orientation**: Indicates whether the viewport is in landscape (the display is wider than it is tall) or portrait (the display is taller than it is wide) mode.
-- **aspect-ratio [min-/max-/device-]**: Describes the aspect ratio of the targeted display area of the output device. This value consists of two positive integers separated by a slash ("/") character. This represents the ratio of horizontal pixels (first term) to vertical pixels (second term).
-- **color [min-/max-]**: Indicates the number of bits per color component of the output device. If the device is not a color device, this value is zero.
-- **color-index [min-/max-]**: Indicates the number of entries in the color look-up table for the output device.
-- **grid**: Determines whether the output device is a grid device or a bitmap device. If the device is grid-based (such as a TTY terminal or a phone display with only one font), the value is 1. Otherwise it is zero.
-- **monochrome [min-/max-]**: Indicates the number of bits per pixel on a monochrome (greyscale) device. If the device isn't monochrome, the device's value is 0.
-- **resolution [min-/max-]**: Indicates the resolution (pixel density) of the output device. The resolution may be specified in either dots per inch (dpi) or dots per centimeter (dpcm).
-- **scan**: Describes the scanning process of television output devices.
+#### height [min-/max-/device-]
+
+The height media feature describes the height of the output device's rendering surface (such as the height of the
+viewport or of the page box on a printer).
+
+#### width [min-/max-/device-]
+
+The width media feature describes the width of the rendering surface of the output device (such as the width of the
+document window, or the width of the page box on a printer).
+
+#### orientation
+
+Indicates whether the viewport is in landscape (the display is wider than it is tall) or portrait (the display is taller
+than it is wide) mode.
+
+#### aspect-ratio [min-/max-/device-]
+
+Describes the aspect ratio of the targeted display area of the output device. This value consists of two positive
+integers separated by a slash ("/") character. This represents the ratio of horizontal pixels (first term) to vertical
+pixels (second term).
+
+#### color [min-/max-]
+
+Indicates the number of bits per color component of the output device. If the device is not a color device, this value
+is zero.
+
+#### color-index [min-/max-]
+
+Indicates the number of entries in the color look-up table for the output device.
+
+#### grid
+
+Determines whether the output device is a grid device or a bitmap device. If the device is grid-based (such as a TTY
+terminal or a phone display with only one font), the value is 1. Otherwise it is zero.
+
+#### monochrome [min-/max-]
+
+Indicates the number of bits per pixel on a monochrome (greyscale) device. If the device isn't monochrome, the device's
+value is 0.
+
+#### resolution [min-/max-]
+
+Indicates the resolution (pixel density) of the output device. The resolution may be specified in either dots per inch
+(dpi) or dots per centimeter (dpcm).
+
+#### scan
+
+Describes the scanning process of television output devices.
+
 
 ### Building logic
 

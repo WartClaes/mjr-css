@@ -1,4 +1,4 @@
-# 3.6 Creating grids
+# 3.7 Creating grids
 
 In this part we'll take a closer look at different grid systems. To keep the code somewhat readable we'll create a 4
 column grid in each example.
