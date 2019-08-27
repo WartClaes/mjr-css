@@ -54,5 +54,5 @@ _The CSSOM tree tells us how the different elements should look when rendered._
 
 #### Example
 
-![dom](../../assets/cssom.png)
+![cssom](../../assets/cssom.png)
 
