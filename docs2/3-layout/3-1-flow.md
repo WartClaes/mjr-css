@@ -89,7 +89,11 @@ the following element to start on a new line. By default a block elements takes 
 .block {
 	background-color: #f00;
 	border: solid 5px hotpink;
-	display: block; /* could be removed, because UA will set it as default value for many container elements (e.g. div/p/...) */
+	/*
+		could be removed, because UA will set it as default
+		value for many container elements (e.g. div/p/...)
+	*/
+	display: block;
 	margin: 10px;
 	padding: 10px;
 }
