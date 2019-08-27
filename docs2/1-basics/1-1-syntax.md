@@ -9,11 +9,15 @@ In this chapter we explain the syntax used in CSS.
 * [Comments](1-1-syntax.md#comments)
 * [Shorthands](1-1-syntax.md#shorthands)
 
+---
+
 ## Introduction
 
 CSS is a declarative language which makes it fairly easy to understand. It is also nice to you as it does not break on error, so your page is not completely broken when you make a small mistake. On the other hand it makes it harder to spot the issues because you don't see anything wrong.
 
 CSS does not really care about spaces, tabs or newlines. But it is a good practice to add those to make yout code more readable.
+
+---
 
 ## Anatomy
 
@@ -38,6 +42,8 @@ When looking at the CSS above we can specify the different parts of a CSS file.
 * `#f00` is a value
 * `background-color: #f00;` is a declaration
 
+---
+
 ## Comments
 
 Comments in CSS are done like this:
@@ -47,6 +53,8 @@ Comments in CSS are done like this:
 ```
 
 But since CSS is a nice guy and ignores everything that is invalid, it does not complain about other ways of commenting such as `//` or `<!-- -->`.
+
+---
 
 ## Shorthands
 
@@ -63,7 +71,7 @@ When values are omitted from a shorthand form, unless otherwise defined, each "m
 }
 ```
 
-### example
+### Example
 
 The following code examples have the same style output
 

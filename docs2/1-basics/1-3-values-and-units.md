@@ -9,6 +9,8 @@ In CSS there are a large amount of value types. Ranging from numerical values to
 * [Variables](1-3-values-and-units.md#variables)
 * [Functions](1-3-values-and-units.md#functions)
 
+---
+
 ## Colors
 
 There are a number of ways to set colors in CSS. These values can always be used in all places where colors can be set.
@@ -94,6 +96,8 @@ Colors are used at various places in CSS, underneath you'll find a brief summary
 * `text-decoration-color`: sets the color of the text decoration, for example a line underneath your text
 * `text-stroke-color`: sets the color of the stroke around your text if a text stroke is specified
 
+---
+
 ## Numeric
 
 Like with the colors there are number of different numeric values. They are divided into two groups, absolute and relative units. In this chapter we will find out all about these units.
@@ -148,6 +152,8 @@ Percentage values are accepted for most properties that use numeric values. It i
 }
 ```
 
+---
+
 ## Variables
 
 CSS also provides a way to set variables and re-use/re-assign them on the fly. We will talk about them some more in a later topic.
@@ -163,6 +169,8 @@ CSS also provides a way to set variables and re-use/re-assign them on the fly. W
     color: var(--somecolor);
 }
 ```
+
+---
 
 ## Functions
 

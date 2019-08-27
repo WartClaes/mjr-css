@@ -9,6 +9,8 @@ In this part we will cover some of the core concepts of CSS. These are the funda
 * [Source order](1-5-concepts.md#source-order)
 * [Inheritance](1-5-concepts.md#inheritance)
 
+---
+
 ## Cascade
 
 In CSS, styles are applied from top to bottom, allowing styles to be added or overridden. Because browsers already put some default styles on a number of selectors, you use this phenomenon the entire time.
@@ -29,6 +31,8 @@ p {
 ```
 
 In the example above the background of the `p` will be `#00f`.
+
+---
 
 ## Specificity
 
@@ -78,11 +82,15 @@ div {
 <p id="bar" class="foo">I am #bada55.</p>
 ```
 
+---
+
 ## Source order
 
 The source order in CSS also plays an important role in the parsing of the CSS.
 
 If properties with the same importance exist, the last one will always win. It explains the: "I will put my new CSS at the bottom of the file to be sure".
+
+---
 
 ## Inheritance
 

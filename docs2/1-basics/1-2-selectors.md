@@ -10,6 +10,8 @@ In this chapter we will learn how to write CSS Selectors and find out how powerf
 * [Pseudo elements](1-2-selectors.md#pseudo-elements)
 * [Combining selectors](1-2-selectors.md#combining-selectors)
 
+---
+
 ## Basic Selectors
 
 ### Element Selectors
@@ -76,6 +78,8 @@ The universal selector is the power selector, able to select all elements on the
     background-color: #f00;
 }
 ```
+
+---
 
 ## Attribute Selectors
 
@@ -193,6 +197,8 @@ The attribute selectors allow you to select elements with specific attributes. T
 }
 ```
 
+---
+
 ## Pseudo classes
 
 A pseudo class is a selector used to select an element in a certain state or context. For example selecting all disabled input elements or hovered buttons can be done with pseudo classes
@@ -200,6 +206,8 @@ A pseudo class is a selector used to select an element in a certain state or con
 > \[TIP\] It is highly recommended to prefix these selectors with only one semicolon.
 
 Since pseudo classes are available in large amounts, the explanation of each pseudo class [can be found here](../99-extras/pseudo-classes.md).
+
+---
 
 ## Pseudo elements
 
@@ -299,6 +307,8 @@ Each element in the top layer's stack has a `::backdrop` pseudo-element. This ps
 The `::backdrop` pseudo-element can be used to create a backdrop that hides the underlying document for an element in the top layer's stack, e.g., for the element that is displayed fullscreen as described by this specification.
 
 [Example](http://demo.agektmr.com/dialog/)
+
+---
 
 ## Combining selectors
 

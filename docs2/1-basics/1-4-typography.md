@@ -7,6 +7,8 @@ In CSS there are a large amount of value types. Ranging from numerical values to
 * [Basics](1-4-typography.md#basics)
 * [Custom fonts](1-4-typography.md#custom-fonts)
 
+---
+
 ## Basics
 
 Fonts come in different sizes and weights, which makes that there are a lot of properties concerning fonts. But how can you benefit the most from such font in CSS?
@@ -141,6 +143,8 @@ All of these properties combined result in something like this:
     Button
 </span>
 ```
+
+---
 
 ## Custom fonts
 

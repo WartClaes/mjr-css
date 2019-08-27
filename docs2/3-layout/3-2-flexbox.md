@@ -1,6 +1,6 @@
 # 3.2 Flexbox
 
-Flexbox is a new approach on handling layouts. When creating layouts with only tables, floats and positioning it is
+Flexbox is a newer approach on handling layouts. When creating layouts with only tables, floats and positioning it is
 very hard and frustrating. Flexbox takes on a completely different approach.
 
 A few key features of Flexbox are vertical alignment of elements in a box, equal heights on rows and distributing
