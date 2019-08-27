@@ -81,7 +81,7 @@ In order for this to work one of `top`, `right`, `bottom` or `left` should be se
 
 ## z-index
 
-Z-index comes to the rescue when elements start overlapping each other.
+`z-index` comes to the rescue when elements start overlapping each other.
 
 By default the order of the element in the browser define the visble order. The later the element appears in the HTML,
 the 'higher' it will be shown.
