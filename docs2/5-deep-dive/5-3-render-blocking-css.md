@@ -29,7 +29,7 @@ But on the other hand, lazy loading CSS means that the CSSOM will updated after 
 most likely cause a repaint of your screen and even worse, this could cause a **Flash Of Unstyled Content**. Be aware of
 these dangers and always compare the benefits with the downsides.
 
---
+---
 
 ## Media Queries
 
