@@ -68,4 +68,22 @@ When using an attribute selector you will have the option to provide a case sens
 
 ## :any-link
 
+A pseudo class that represents an element that acts as an anchor for a hyperlink. It would match an element if that element would match either `:link` or `:visited`.
 
+
+## :local-link
+
+This pseudo class allows to style hyperlinks that have the same base url as the document.
+
+```css
+:local-link { text-decoration: none; }
+```
+
+
+## :target
+
+With this pseudo class you can set styling on the pages current target. This means that if you have a fragment set in you url `foo.bar/index.html#baz`, the element with id `baz` will be used.
+
+```css
+:target { color: hotpink; }
+```
