@@ -1,0 +1,142 @@
+@import url('//fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+
+/* General setup */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1400px;
+	min-width: 1000px;
+}
+
+/* Layout */
+
+section {
+	float: left;
+	width: 50%;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+nav {
+	float: left;
+	width: 20%;
+}
+
+footer {
+	clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+	padding: 20px;
+}
+
+/* header and footer */
+header,
+footer {
+	border-bottom: 5px solid #a66;
+	border-top: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+h1,
+h2 {
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	letter-spacing: 3px;
+}
+
+p {
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+h2 + p {
+	text-indent: 2em;
+}
+
+a,
+a:visited {
+	color: #a66;
+	outline: none;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	color: rgb(121, 70, 70);
+	text-decoration: none;
+}
+
+a[href^="http"]::after {
+	background-image: url('https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png');
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	height: 1em;
+	margin-left: 5px;
+	width: 1em;
+}
+
+ul {
+	list-style: none;
+	padding-left: 3em;
+}
+
+ul li::before {
+	background-color: #a66;
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	height: .6em;
+	margin-right: 5px;
+	width: .6em;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li::before {
+	content: none;
+}
+
+nav ul li a {
+	border: 1px solid #a66;
+	display: block;
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	padding: 1em 2em;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: #a66;
+	color: #fff;
+}
