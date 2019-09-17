@@ -1,0 +1,76 @@
+/*
+	.card article img 	0 0 0 1 2
+	.card footer 		0 0 0 1 1
+	.card header		0 0 0 1 1
+	.card				0 0 0 1 0
+*/
+
+/* General page styles */
+
+body {
+	margin: 0;
+}
+
+html {
+  	background-color: #ccc;
+  	font-family: 'Helvetica neue', Arial, 'sans serif';
+  	font-size: 10px;
+}
+
+.card {
+  	background-color: red;
+  	border: 0.2em solid black;
+  	border-radius: 1.5em;
+  	height: 22em;
+  	margin: 5em auto;
+  	width: 35em;
+}
+
+.card header,
+.card footer {
+	height: 3em;
+	padding: 1em;
+}
+
+/* Header */
+.card header {
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+	border-radius: 1.5em 1.5em 0 0;
+}
+
+/* Footer */
+.card footer {
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+	border-radius: 0 0 1.5em 1.5em;
+}
+
+.card footer p {
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+/* Content */
+.card h2,
+.card p {
+	margin: 0;
+}
+
+.card h2 {
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+.card article {
+	background-color: rgba(0,0,0,.2);
+	height: 12em;
+}
+
+.card article p {
+	color: white;
+	padding: 1em;
+}
+
+.card article img {
+	float: right;
+	max-height: 100%;
+}
