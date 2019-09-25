@@ -397,7 +397,7 @@ Strict combines `size`, `layout` and `paint`.
 
 #### Content
 
-Strict combines `layout` and `paint`. This is the one you should use by default. It provides a lot of performance improvements without de downside of having to know the dimensions of the box on before hand, which is needed with `strict`.
+Content combines `layout` and `paint`. This is the one you should use by default. It provides a lot of performance improvements without de downside of having to know the dimensions of the box on before hand, which is needed with `strict`.
 
 
 ### Resetting inheritable styles
