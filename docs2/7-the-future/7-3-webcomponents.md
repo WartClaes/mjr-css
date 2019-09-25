@@ -237,7 +237,7 @@ One way to do this is using CSS custom properties. By creating variables that ca
 
 ### ::part & ::theme
 
-In previous versions of the specification we had selectors such as `/deep/` adn `:shadow` to target elements inside the shadow DOM. These came with a lot of downsides such as complete loss of control for which items are styleable and which aren't.
+In previous versions of the specification we had selectors such as `/deep/` and `:shadow` to target elements inside the shadow DOM. These came with a lot of downsides such as complete loss of control for which items are styleable and which aren't.
 
 So they introduced a new set of pseudo elements to get around this problem.
 
