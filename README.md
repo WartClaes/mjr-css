@@ -13,7 +13,7 @@
 * [Box Model](docs/2-boxes/2-1-box-model.md)
 * [Backgrounds](docs/2-boxes/2-2-backgrounds.md)
 * [Border](docs/2-boxes/2-3-border.md)
-* [Aligments](docs/2-boxes/2-4-alignments.md)
+* [Alignments](docs/2-boxes/2-4-alignments.md)
 * [Shadows](docs/2-boxes/2-5-shadows.md)
 
 ## Chapter 3: Layout
