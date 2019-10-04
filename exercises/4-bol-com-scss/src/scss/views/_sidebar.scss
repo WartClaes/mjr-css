@@ -1,0 +1,56 @@
+.sidebar {
+	background-color: $color-white;
+	display: none;
+	grid-area: sidebar;
+}
+
+.sidebar__header {
+	align-items: center;
+	display: flex;
+	height: $header-height;
+	justify-content: center;
+}
+
+.sidebar__home {
+	appearance: none;
+	background-color: $color-primary;
+	border: none;
+	border-radius: 50%;
+	color: $color-white;
+	cursor: pointer;
+	display: block;
+	font-size: 30px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 48px;
+}
+
+.sidebar__logo {
+	color: $color-primary;
+	display: none;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+@include tablet {
+	.sidebar {
+		display: block;
+	}
+}
+
+@include desktop {
+	.sidebar__logo {
+		display: block;
+	}
+
+	.sidebar__header {
+		justify-content: flex-start;
+		padding: 0 10px;
+	}
+
+	.sidebar__home {
+		margin-right: 10px;
+	}
+}

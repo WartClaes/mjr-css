@@ -1,0 +1,102 @@
+.cart {
+	box-sizing: border-box;
+	display: none;
+	flex-direction: column;
+	grid-area: cart;
+	padding: 0 10px;
+}
+
+.cart--open {
+	background-color: $color-white;
+	display: block;
+	height: 300px;
+	position: fixed;
+	right: 0;
+	top: $header-height;
+	width: 100%;
+}
+
+.cart h2 {
+	color: $color-primary;
+}
+
+.cart__header {
+	align-items: center;
+	display: flex;
+	margin: 20px 0;
+}
+
+.cart__item {
+	border-bottom: 1px solid #0000A440;
+	color: $color-primary;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.cart__item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.cart__remove {
+	cursor: pointer;
+	font-weight: 900;
+}
+
+.cart__remove:hover {
+	text-decoration: underline;
+}
+
+.cart__footer {
+	padding: 25px 0;
+}
+
+@include tablet {
+	.cart--open {
+		box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+		right: 10px;
+		top: $header-height - 10px;
+		width: 320px;
+
+		&::after {
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 10px solid $color-white;
+			content: '';
+			position: absolute;
+			right: 20px;
+			top: -10px;
+		}
+	}
+}
+
+@include desktop {
+	.cart {
+		background-color: rgba(0, 0, 164, .1);
+		border-left: 1px solid #0000A440;
+		display: flex;
+	}
+
+	.cart--open {
+		box-shadow: none;
+		height: auto;
+		position: static;
+		width: auto;
+	}
+
+	.cart__header {
+		// make sure the header does not get smaller then $header-height
+		flex-shrink: 0;
+		height: $header-height;
+		margin: auto 0;
+	}
+
+	.cart__container {
+		flex-grow: 1;
+		height: 100%;
+		overflow: scroll;
+	}
+}

@@ -1,0 +1,41 @@
+.category-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 25px;
+}
+
+.category {
+	background-color: $color-white;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.category__content {
+	padding: 25px;
+}
+
+.category__link {
+	color: $color-neutral;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.category__link:hover {
+	color: $color-primary;
+}
+
+.category__link:first-of-type {
+	margin-top: 25px;
+}
+
+.category__link:last-child {
+	margin-bottom: 0;
+}
+
+@include tablet {
+	.category {
+		margin-right: 25px;
+		width: 450px;
+	}
+}

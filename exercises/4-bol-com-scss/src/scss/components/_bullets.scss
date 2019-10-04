@@ -1,0 +1,21 @@
+.bullets {
+	text-align: center;
+}
+
+.bullets__bullet {
+	background-color: #d8d8d8;
+	border-radius: $bullet-size / 2;
+	cursor: pointer;
+	display: inline-block;
+	height: $bullet-size;
+	margin-right: $bullet-size / 2;
+	width: $bullet-size;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.bullets__bullet--active {
+	background-color: $color-primary;
+}

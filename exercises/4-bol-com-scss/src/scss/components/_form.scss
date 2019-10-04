@@ -1,0 +1,31 @@
+.form-item {
+	margin-bottom: 30px;
+
+	label {
+		color: $color-primary;
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	input,
+	textarea {
+		border: 1px solid #979797;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-family: $font-family;
+		font-size: 18px;
+		height: 40px;
+		padding: 0 5px;
+		width: 100%;
+
+		&:focus {
+			border-color: $color-primary;
+		}
+	}
+
+	textarea {
+		height: 150px;
+	}
+}

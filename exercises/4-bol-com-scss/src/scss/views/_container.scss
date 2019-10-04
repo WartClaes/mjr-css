@@ -1,0 +1,69 @@
+.container {
+	grid-area: container;
+}
+
+.container__header {
+	align-items: center;
+	background-color: $color-white;
+	display: flex;
+	height: $header-height;
+	padding: 0 25px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	h1 {
+		flex-grow: 1;
+	}
+}
+
+.container__icon--menu {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.container__icon--shopping-cart {
+	cursor: pointer;
+	margin-left: 10px;
+	position: relative;
+}
+
+.container__badge {
+	background-color: $color-active;
+	border-radius: $badge-size / 2;
+	bottom: -10px;
+	color: $color-primary;
+	font-family: $font-family;
+	font-size: 12px;
+	height: $badge-size;
+	line-height: $badge-size;
+	position: absolute;
+	right: -10px;
+	text-align: center;
+	width: $badge-size;
+}
+
+@include tablet {
+	.container {
+		overflow: hidden;
+	}
+
+	.container__header {
+		background-color: transparent;
+	}
+
+	.container__content {
+		overflow: scroll;
+		height: calc(100% - #{$header-height});
+	}
+
+	.container__icon--menu {
+		display: none;
+	}
+}
+
+@include desktop {
+	.container__icon--shopping-cart {
+		display: none;
+	}
+}

@@ -1,0 +1,102 @@
+@keyframes slide {
+	from {
+		transform: translateY(100vh);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideTablet {
+	from {
+		transform: translate(-50%, 100vh);
+	}
+	to {
+		transform: translate(-50%, -50%);
+	}
+}
+
+.dialog-wrapper {
+	display: none;
+}
+
+.overlay {
+	background-color: rgba(0,0,0,0.5);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.body--dialog-open {
+	.dialog-wrapper {
+		display: block;
+	}
+
+	.dialog {
+		animation-name: slide;
+		animation-duration: 300ms;
+		animation-fill-mode: forwards;
+	}
+}
+
+.dialog {
+	background-color: $color-white;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	left: 0;
+	padding: 35px 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 101;
+}
+
+.dialog__close {
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	transition: transform 300ms linear;
+
+	&:hover {
+		transform: rotate(180deg);
+	}
+}
+
+.dialog__header {
+	padding-bottom: 20px;
+
+	h2 {
+		color: $color-primary;
+	}
+}
+
+.dialog__content {
+	flex-grow: 1;
+}
+
+@include tablet {
+	.dialog {
+		border-radius: 20px;
+		box-shadow: 0 0 15px rgba(0,0,0,0.3);
+		left: 50%;
+		position: absolute;
+		height: 700px;
+		padding: 35px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 550px;
+	}
+
+	.body--dialog-open {
+		.dialog {
+			animation-name: slideTablet;
+			animation-duration: 500ms;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap');
+
+@import 'config/variables';
+@import 'config/mixins';
+
+@import 'components/button';
+@import 'components/bullets';
+@import 'components/price';
+@import 'components/stars';
+@import 'components/form';
+@import 'components/dialog';
+@import 'components/category';
+@import 'components/cart';
+
+@import 'views/sidebar';
+@import 'views/navigation';
+@import 'views/container';
+@import 'views/detail';
+@import 'views/review';
+
+html,
+body {
+	background-color: #F0F0F0;
+	font-family: $font-family;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: $color-primary;
+	font-size: 32px;
+	margin: 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+h2 {
+	color: $color-neutral;
+	font-size: 28px;
+	margin: 0;
+}
+
+.body--dialog-open {
+	overflow: hidden;
+}
+
+@include tablet {
+	.grid {
+		display: grid;
+		grid-template-columns: 64px 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "sidebar container";
+		height: 100%;
+	}
+}
+
+@include desktop {
+	.grid {
+		grid-template-columns: 320px 1fr 320px;
+		grid-template-areas: "sidebar container cart";
+	}
+}

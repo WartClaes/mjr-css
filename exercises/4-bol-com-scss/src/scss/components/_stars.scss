@@ -1,0 +1,26 @@
+.stars--right {
+	text-align: right;
+}
+
+.stars__star {
+	&::after {
+		@include icon;
+
+		content: 'star';
+		color: #ffcb3b;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+@for $i from 0 through $ratings {
+	.stars[data-rating="#{$i}"] {
+		.stars__star:nth-child(1n+#{$i + 1}) {
+			&::after {
+				color: #c4c4c4;
+			}
+		}
+	}
+}

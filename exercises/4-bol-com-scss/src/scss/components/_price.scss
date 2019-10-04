@@ -1,0 +1,12 @@
+.price {
+	color: #18b32c;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.price--old {
+	color: $color-neutral;
+	font-size: 30px;
+	margin-right: 10px;
+	text-decoration: line-through;
+}
